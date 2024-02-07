@@ -17,13 +17,13 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
     </nav>
 
-    <div class="container">    
+    <div class="container">
       <div class="row">
 
         <div class="card-login">
@@ -32,7 +32,7 @@
               Login
             </div>
             <div class="card-body">
-              <form action="valida_login.php" method="post">
+              <form action="home.php" method="post">
                 <div class="form-group">
                   <input name="email" type="email" class="form-control" placeholder="E-mail">
                 </div>

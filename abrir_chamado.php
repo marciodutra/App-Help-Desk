@@ -1,4 +1,4 @@
-<?php require_once "validador_acesso.php" ?>
+<?php //require_once "validador_acesso.php" ?>
 
 <html>
   <head>
@@ -30,13 +30,13 @@
       </ul>
     </nav>
 
-    <div class="container">    
+    <div class="container">
       <div class="row">
 
         <div class="card-abrir-chamado">
           <div class="card">
             <div class="card-header">
-              Abertura de chamado
+              <h3>Abertura de chamado</h3>
             </div>
             <div class="card-body">
               <div class="row">
@@ -70,7 +70,7 @@
                       </div>
 
                       <div class="col-6">
-                        <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
+                        <button class="btn btn-lg btn-info btn-block" href="consultar_chamado.php">Abrir</button>
                       </div>
                     </div>
                   </form>

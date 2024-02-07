@@ -1,5 +1,7 @@
 <?php 
-  require_once "validador_acesso.php";
+  //require_once "validador_acesso.php";
+  session_start();
+  print_r($_SESSION);
   
 ?>
 
@@ -39,7 +41,7 @@
         <div class="card-home">
           <div class="card">
             <div class="card-header">
-              Menu
+              <h3>Menu</h3>
             </div>
             <div class="card-body">
               <div class="row">

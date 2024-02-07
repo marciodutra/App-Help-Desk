@@ -1,4 +1,4 @@
-<?php require_once "validador_acesso.php" ?>
+<?php //require_once "validador_acesso.php" ?>
 
 <?php
 
@@ -6,7 +6,7 @@
   $chamados = array();
 
   //abrir o arquivo.hd
-  $arquivo = fopen('../../app_help_desk/arquivo.hd', 'r');
+  $arquivo = fopen('arquivo.hd', 'r');
 
   //enquanto houver registros (linhas) a serem recuperados
   while(!feof($arquivo)) { //testa pelo fim de um arquivo
@@ -39,7 +39,7 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
@@ -56,7 +56,7 @@
         <div class="card-consultar-chamado">
           <div class="card">
             <div class="card-header">
-              Consulta de chamado
+              <h3>Consulta de chamado</h3>
             </div>
             
             <div class="card-body">
@@ -68,14 +68,14 @@
                   $chamado_dados = explode('#', $chamado);
 
                   //
-                  if($_SESSION['perfil_id'] == 2) {
+                  /*if($_SESSION['perfil_id'] == 2) {
                     //só vamos exibir o chamado, se ele foi criado pelo usuário
                     if($_SESSION['id'] != $chamado_dados[0]) {
                       continue;
                     }
-                  }
+                  }*/
 
-                  if(count($chamado_dados) < 3) {
+                  if(count($chamado_dados) < 4) {
                     continue;
                   }
 

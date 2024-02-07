@@ -1,7 +1,8 @@
 <?php
 
+	
 	session_start();
-
+	
 	//estamos trabalhando na montagem do texto
 	$titulo = str_replace('#', '-', $_POST['titulo']);
 	$categoria = str_replace('#', '-', $_POST['categoria']);
@@ -13,7 +14,7 @@
 
 
 	//abrindo o arquivo
-	$arquivo = fopen('../../app_help_desk/arquivo.hd', 'a');
+	$arquivo = fopen('arquivo.hd', 'a');
 	//escrevendo o texto
 	fwrite($arquivo, $texto);
 	//fechando o arquivo
