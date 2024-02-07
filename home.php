@@ -47,12 +47,12 @@
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
                   <a href="abrir_chamado.php">
-                    <img src="formulario_abrir_chamado.png" width="70" height="70">
+                    <img src="formulario_abrir_chamado.png" width="70" height="70">Abrir chamado
                   </a>
                 </div>
                 <div class="col-6 d-flex justify-content-center">
                   <a href="consultar_chamado.php">
-                    <img src="formulario_consultar_chamado.png" width="70" height="70">
+                    <img src="formulario_consultar_chamado.png" width="70" height="70">Consultar chamados
                   </a>
                 </div>
               </div>
